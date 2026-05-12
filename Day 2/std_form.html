@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<head>
+    <title>Student Registration Form</title>
+    <!--Apply internal CSS to form elements-->
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            padding: 30px;
+        }
+        form{
+            width: 450px;
+            margin: auto;
+            background-color: rgb(215, 215, 215);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(131, 17, 17, 0.2);
+        }   
+        h1{
+            text-align: center;
+            margin-bottom: 20px;
+            color: #220000;
+        }
+        input,
+        select,
+        textarea{
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #000000;
+            font-size: 13px;
+        }
+        input[type="radio"]{
+            width: auto;
+            margin-right: 5px;
+        }
+        textarea{
+            resize: none;
+            height: 80px;
+        }
+        input[type="submit"]{
+            background-color: rgb(0, 77, 24);
+            color: rgb(255, 255, 255);
+            padding: 10px 20px;
+            height: 30px;
+            font-weight: bold;
+           
+        }
+        input[type="submit"]:hover{
+            background-color: rgb(212, 156, 86);
+        }
+        input[type="reset"]{
+            background-color: rgb(255, 0, 0);
+            color: rgb(255, 255, 255);
+             padding: 10px 20px;
+            height: 30px;
+            font-weight: bold;
+            
+        }
+        input[type="reset"]:hover{
+            background-color: rgb(212, 156, 86);
+        }
+        nav{
+            background-color: #ffffff;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        nav ul{
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+        }
+
+        nav ul li a:hover{
+            color: rgb(212, 156, 86);
+        }
+        label{
+            font-weight: bold;
+        }
+        footer{
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <!--semantic element practice-->
+    <nav id="pr" name="">
+        <ul>
+        <li><a href="INDEX.html">Home</a></li>
+        <li><a href="INDEX.html">about</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <form>
+                <h1>Student Details Form</h1>
+                <label>Name:</label>
+                <input type="text" placeholder="Enter Your Name" required><br>
+                <br>
+                <label>Enrollment:</label>
+                <input type="text" placeholder="Enter Your Enrollment" required><br>
+                <br>
+                <label>Branch:</label>
+                <select>
+                    <option>CSE</option>
+                    <option>AI/ML</option>
+                    <option>EC</option>
+                    <option>IOT</option>
+                </select>
+                <label>Division:</label>
+                <input type="text" placeholder="enter your division pls" maxlength="1" >
+                <br><br>
+                <label>Gender</label>
+                <input type="radio" id="male" value="Male" name="Gender">Male
+                <input type="radio" id="female" value="Female" name="Gender">Female
+                <br><br>
+                <label>Mobile Number:</label>
+                <input type="number" id="Mobile Number" placeholder="Enter Mobile No." required>
+                <br><br>
+                <label>Email:</label>
+                <input type="email" id="email" placeholder="Enter Your Mail Id" required>
+                <br><br>
+                <label>Password:</label>
+                <input type="password" id="password" placeholder="Enter Password" required>
+                <br><br>
+                <label>Photo:</label>
+                <input type="file" required><br><br>
+                <label>Remarks</label>
+                <textarea id="Remarks" placeholder="Enter Your Remark" required></textarea>
+                <br><br>
+                <input type="submit">
+                <br><br>
+                <input type="reset">
+                <br><br>
+            </form>
+        </section>
+    </main>
+    <footer>
+    <p>© 2026 Student Portal</p>
+    </footer>
+</body>
+</html>
