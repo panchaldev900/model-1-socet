@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<title>Shape Transformation</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+
+    body{
+        height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background:linear-gradient(135deg,#1e3c72,#2a5298);
+        font-family:Arial, sans-serif;
+    }
+
+    .shape{
+        width:180px;
+        height:180px;
+        background:linear-gradient(45deg,#ff512f,#dd2476);
+        transition:all 1s ease;
+        cursor:pointer;
+        box-shadow:0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .shape:hover{
+        border-radius:50%;
+        transform:rotate(180deg) scale(2.2);
+        background:linear-gradient(45deg,#00c9ff,#92fe9d);
+    }
+
+    h1{
+        position:absolute;
+        top:40px;
+        color:white;
+        letter-spacing:2px;
+    }
+</style>
+
+</head>
+<body>
+
+<h1>Shape Transformation Effect</h1>
+
+<div class="shape"></div>
+
+</body>
+</html>
