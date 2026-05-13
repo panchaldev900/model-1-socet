@@ -67,17 +67,20 @@ button{
     padding: 14px 35px;
     border: none;
     border-radius: 50px;
-    background: #d8276b;
+    background: #ff5ba0;
     color: black;
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
     transition: 0.4s;
+    animation: pulse 1.5s infinite;
+    box-shadow: 0 0 15px #797979;
 }
 
 button:hover{
     background: white;
-    transform: scale(1.08);
+    transform: scale(1.1);
+    box-shadow: 0 0 25px white;
 }
 
 
