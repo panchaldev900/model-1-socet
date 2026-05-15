@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration Form</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            padding: 30px;
+        }
+
+        nav{
+            background-color: rgb(0, 77, 24);
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        nav ul{
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover{
+            color: rgb(212, 156, 86);
+        }
+
+        form{
+            width: 450px;
+            margin: auto;
+            background-color: rgb(215, 215, 215);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(131, 17, 17, 0.2);
+        }
+
+        h1{
+            text-align: center;
+            margin-bottom: 20px;
+            color: #220000;
+        }
+
+        label{
+            font-weight: bold;
+        }
+
+        label i{
+            color: rgb(0, 77, 24);
+            margin-right: 5px;
+        }
+
+        input,
+        select,
+        textarea{
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #000000;
+            font-size: 13px;
+            border-radius: 5px;
+        }
+
+        input[type="radio"]{
+            width: auto;
+            margin-right: 5px;
+        }
+
+        textarea{
+            resize: none;
+            height: 80px;
+        }
+
+        input[type="submit"]{
+            background-color: rgb(0, 77, 24);
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover{
+            background-color: rgb(212, 156, 86);
+        }
+
+        input[type="reset"]{
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        input[type="reset"]:hover{
+            background-color: rgb(212, 156, 86);
+        }
+
+        footer{
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="INDEX.html">Home</a></li>
+            <li><a href="INDEX.html">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Section -->
+    <main>
+        <section>
+
+            <form>
+
+                <h1>Student Details Form</h1>
+
+                <!-- Name -->
+                <label>
+                    <i class="fa-solid fa-user"></i>
+                    Name:
+                </label>
+
+                <input type="text" placeholder="Enter Your Name" required>
+
+                <!-- Enrollment -->
+                <label>
+                    <i class="fa-solid fa-id-card"></i>
+                    Enrollment:
+                </label>
+
+                <input type="text" placeholder="Enter Your Enrollment" required>
+
+                <!-- Branch -->
+                <label for="branch">
+                    <i class="fa-solid fa-code-branch"></i>
+                    Branch:
+                </label>
+
+                <select id="branch">
+
+                    <option>CSE</option>
+                    <option>AI/ML</option>
+                    <option>EC</option>
+                    <option>IOT</option>
+
+                </select>
+
+                <!-- Division -->
+                <label>
+                    <i class="fa-solid fa-users"></i>
+                    Division:
+                </label>
+
+                <input type="text" placeholder="Enter Your Division" maxlength="1">
+
+                <!-- Gender -->
+                <label>
+                    <i class="fa-solid fa-venus-mars"></i>
+                    Gender:
+                </label>
+
+                <br><br>
+
+                <label>
+                    <input type="radio" id="male" value="Male" name="Gender">
+                    Male
+                </label>
+
+                <label>
+                    <input type="radio" id="female" value="Female" name="Gender">
+                    Female
+                </label>
+
+                <br><br>
+
+                <!-- Mobile Number -->
+                <label>
+                    <i class="fa-solid fa-phone"></i>
+                    Mobile Number:
+                </label>
+
+                <input type="number" placeholder="Enter Mobile No." required>
+
+                <!-- Email -->
+                <label>
+                    <i class="fa-solid fa-envelope"></i>
+                    Email:
+                </label>
+
+                <input type="email" placeholder="Enter Your Mail ID" required>
+
+                <!-- Password -->
+                <label>
+                    <i class="fa-solid fa-lock"></i>
+                    Password:
+                </label>
+
+                <input type="password" placeholder="Enter Password" required>
+
+                <!-- Photo -->
+                <label for="photo">
+                    <i class="fa-solid fa-image"></i>
+                    Photo:
+                </label>
+
+                <input type="file" id="photo" required>
+
+                <!-- Remarks -->
+                <label>
+                    <i class="fa-solid fa-comment"></i>
+                    Remarks:
+                </label>
+
+                <textarea placeholder="Enter Your Remark" required></textarea>
+
+                <!-- Buttons -->
+                <input type="submit" value="Submit">
+
+                <input type="reset" value="Reset">
+
+            </form>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Student Portal</p>
+    </footer>
+
+</body>
+</html>
