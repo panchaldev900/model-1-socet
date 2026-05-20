@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        .container {
+            width: 400px;
+            margin: 60px auto;
+            padding: 50px;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            color: #008705;
+        }
+        label {
+            font-weight: bold;
+        }
+        .error {
+            color: red;
+            font-size: 12px;
+            margin-left: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="text"].error-input,
+        input[type="email"].error-input,
+        input[type="tel"].error-input,
+        input[type="password"].error-input {
+            border: 2px solid red;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #457aa0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #eeab3e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form id="registrationForm">
+            <label>Name: <span class="error" id="nameError"></span></label><br>
+            <input type="text" id="name" name="name"><br><br>
+            
+            <label>Email: <span class="error" id="emailError"></span></label><br>
+            <input type="email" id="email" name="email"><br><br>
+            
+            <label>Phone: <span class="error" id="phoneError"></span></label><br>
+            <input type="tel" id="phone" name="phone"><br><br>
+            
+            <label>Password: <span class="error" id="passwordError"></span></label><br>
+            <input type="password" id="password" name="password"><br><br>
+            
+            <input type="submit" value="Register">
+        </form>
+    </div>
+    <script src="form-validation.js"></script>
+</body>
+</html>
