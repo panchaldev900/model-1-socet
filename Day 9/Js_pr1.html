@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Variable</title>
+    <style>
+        .container {
+            width: 600px;
+            height: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #8b99ff;
+            border-radius: 10px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .content {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #000000;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Javascript Variable</h1>
+        </div>
+        <div class="content">
+            <p>Variable is a container for storing data values.</p>
+            <p>In JavaScript, you can declare a variable using the var, let, or const keyword.</p>
+            <p>Example:</p>
+            <p>x: 5</p>
+            <p>y: 6</p>
+        </div>
+    </div>
+    <button onclick="myFunction()">Click me</button>
+    <script>
+        let x = 5;
+        let y = 6;
+
+        let z = x + y;
+        console.log(z); // Output: 11
+
+    myFunction = () => {    
+       
+        alert("Answer of x + y is: " + z);
+    }
+
+    </script>
+</body>
+</html>
